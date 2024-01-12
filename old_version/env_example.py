@@ -5,7 +5,7 @@ LOGOUT_URL = "https://kiki.ccu.edu.tw/~ccmisp06/cgi-bin/class_new/logout.php"
 ADD_URL = "https://kiki.ccu.edu.tw/~ccmisp06/cgi-bin/class_new/Add_Course01.cgi"
 
 SEL_LIMIT = 150
-THREAD_NUM = 8
+THREAD_NUM = 7
 
 CLASS_LIST = [
     # 一4,5 理財與生活
@@ -122,30 +122,6 @@ CLASS_LIST = [
         "7403008_01": "3",
         "7405006_01": "3",
         "7405010_01": "3"
-    },
-
-    # 五2,3 漫遊聲樂的世界
-    {
-        "session_id": "",
-        "dept": "I001",
-        "grade": "1",
-        "cge_cate": "2",
-        "cge_subcate": "1",
-        "page": "1",
-        "e": "0",
-        "m": "0",
-        "SelectTag": "1",
-        "7304007_01": "3",
-        "7304011_01": "3",
-        "course": "7304012_01",
-        "7304012_01": "3",
-        "7304019_01": "3",
-        "7304020_01": "3",
-        "7304023_01": "3",
-        "7304024_01": "3",
-        "7304024_02": "3",
-        "7304029_01": "3",
-        "7304030_01": "3"
     },
     # 西洋音樂史 五4,5
     {

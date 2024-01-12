@@ -1,7 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
+from fake_useragent import UserAgent
+
+def getVerifyImg():
+    return
+
 
 def login(user, password, url):
+    ua = UserAgent()
     headers = {
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
         "Accept-Encoding": "gzip, deflate, br",
@@ -20,7 +26,7 @@ def login(user, password, url):
         "Sec-Fetch-User": "?1",
         "Sec-GPC": "1",
         "Upgrade-Insecure-Requests": "1",
-        "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36",
+        "User-Agent": ua.random,
         "sec-ch-ua": "Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Brave\";v=\"116\"",
         "sec-ch-ua-mobile": "?1",
         "sec-ch-ua-platform": "Android",
@@ -43,6 +49,7 @@ def login(user, password, url):
     return session
 
 def logout(session, url):
+    ua = UserAgent()
     referer = "https://kiki.ccu.edu.tw/~ccmisp06/cgi-bin/class_new/bookmark?session_id=" + str(session) + "&m=0"
     headers = {
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
@@ -58,7 +65,7 @@ def logout(session, url):
         "Sec-Fetch-User": "?1",
         "Sec-GPC": "1",
         "Upgrade-Insecure-Requests": "1",
-        "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36",
+        "User-Agent": ua.random,
         "sec-ch-ua": "\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Brave\";v=\"116\"",
         "sec-ch-ua-mobile": "?1",
     }
