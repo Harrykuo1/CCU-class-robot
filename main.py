@@ -13,7 +13,7 @@ def start(args):
         captcha_text = crashCaptcha(thread_id)
         verifyCaptcha(captcha_text, php_session)
         session = login(php_session, captcha_text)
-        if(session == "fail"):
+        if(str(session) == "fail"):
             continue
         break
 
@@ -34,11 +34,12 @@ def start(args):
                         break
                     time = 0
 
-                # isSuccess = sel_class(session, idx, time)
-                # if(isSuccess):
-                #     env.CLASS_LIST.pop(idx)
+                isSuccess = sel_class(session, idx, time)
+                #if(isSuccess):
+                    #env.CLASS_LIST.pop(idx)
                 time += 1
         except IndexError:
+            print("ERROR")
             continue
 
 

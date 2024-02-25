@@ -105,7 +105,7 @@ def getCaptcha(thread_id):
     if not os.path.exists("tmp"):
         os.makedirs("tmp")
     with open(imgPath, "wb") as f:
-        print(response.content)
+        #print(response.content)
         f.write(response.content)
     php_session = response.cookies.get_dict()['PHPSESSID']
     return php_session
@@ -133,5 +133,5 @@ def verifyCaptcha(captchaText, php_session):
         "captcha_input" : captchaText
     }
     response = requests.post(verify_url, headers = headers, data = data)
-    print(response.content)
+    #print(response.content)
     return 
