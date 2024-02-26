@@ -46,7 +46,7 @@ def sel_class(session, idx, time):
     # print(response.text)
     soup = BeautifulSoup(response.text, 'html.parser')
     font_tag = soup.find("font", color="RED")
-    if(font_tag.get_text()[0:3] == "(星期"):
+    if(font_tag != None and font_tag.get_text()[0:3] == "(星期"):
         print("Class: %d, %s time: %d/%d" % (idx, "T", time, SEL_LIMIT))
         return True
     
