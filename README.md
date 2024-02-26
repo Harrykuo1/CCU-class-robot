@@ -1,4 +1,5 @@
 # CCU_Class_Robot
+## Using host
 1. Install python package
 ```
 pip install -r requirements.txt
@@ -11,4 +12,13 @@ cp env_example.py env.py
 4. Run the bot
 ```python
 python main.py
+```
+## Using docker-compose
+1. Build docker image
+```
+docker-compose build --no-cache
+```
+2. Run the bot
+```
+docker-compose up
 ```
