@@ -9,7 +9,8 @@ pip install -r requirements.txt
 ```
 cp env_example.py env.py
 ```
-4. Run the bot
+4. Enter your account password and the course you want to choose in env.py
+5. Run the bot
 ```python
 python main.py
 ```
@@ -18,7 +19,12 @@ python main.py
 ```
 docker-compose build --no-cache
 ```
-2. Run the bot
+2. Copy a copy of env_example.py to env.py
+```
+cp env_example.py env.py
+```
+3. Enter your account password and the course you want to choose in env.py
+4. Run the bot
 ```
 docker-compose up
 ```
