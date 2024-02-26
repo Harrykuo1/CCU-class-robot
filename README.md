@@ -15,15 +15,15 @@ cp env_example.py env.py
 python main.py
 ```
 ## Using docker-compose
-1. Build docker image
-```
-docker-compose build --no-cache
-```
-2. Copy a copy of env_example.py to env.py
+1. Copy a copy of env_example.py to env.py
 ```
 cp env_example.py env.py
 ```
-3. Enter your account password and the course you want to choose in env.py
+2. Enter your account password and the course you want to choose in env.py
+3. Build docker image
+```
+docker-compose build --no-cache
+```
 4. Run the bot
 ```
 docker-compose up
