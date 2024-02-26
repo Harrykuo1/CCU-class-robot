@@ -35,8 +35,8 @@ def start(args):
                     time = 0
 
                 isSuccess = sel_class(session, idx, time)
-                #if(isSuccess):
-                    #env.CLASS_LIST.pop(idx)
+                if(isSuccess):
+                    env.CLASS_LIST.pop(idx)
                 time += 1
         except IndexError:
             print("ERROR")
