@@ -109,6 +109,7 @@ CLASS_LIST = [
 ]
 ```
 建立完成 !
+
 2. Enter your account password and the course you want to choose in env.py
 3. Build docker image
 ```
