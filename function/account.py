@@ -114,7 +114,7 @@ def crashCaptcha(thread_id):
     pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
     imgPath = "tmp/img" + str(thread_id) + ".jpg"
     img = Image.open(imgPath)
-    text = pytesseract.image_to_string(img).split('\n')[0]
+    text = pytesseract.image_to_string(img, lang='ccu').split('\n')[0]
     return text
 
 def verifyCaptcha(captchaText, php_session):
