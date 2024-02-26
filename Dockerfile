@@ -17,6 +17,7 @@ RUN ln -sf python3 /usr/bin/python
 RUN apk add tesseract-ocr tesseract-ocr-data-eng
 
 COPY . /myapp
+COPY ccu.traineddata /usr/share/tessdata
 WORKDIR /myapp
 RUN pip3 install --break-system-packages -r requirements.txt
 
