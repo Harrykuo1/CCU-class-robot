@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ```
 cp env_example.py env.py
 ```
-4. Enter your account password and the course you want to choose in env.py
+4. Enter your account password and the course you want to choose in env.py(修改教學可參考後面"設置想搶的課程")
 5. Run the bot
 ```python
 python main.py
@@ -19,7 +19,15 @@ python main.py
 ```
 cp env_example.py env.py
 ```
-
+2. Enter your account password and the course you want to choose in env.py(修改教學可參考後面"設置想搶的課程")
+3. Build docker image
+```
+docker-compose build --no-cache
+```
+4. Run the bot
+```
+docker-compose up
+```
 ## 設置想搶的課程
 
 ### 設置想搶的課
@@ -109,13 +117,3 @@ CLASS_LIST = [
 ]
 ```
 建立完成 !
-
-2. Enter your account password and the course you want to choose in env.py
-3. Build docker image
-```
-docker-compose build --no-cache
-```
-4. Run the bot
-```
-docker-compose up
-```
