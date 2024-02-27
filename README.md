@@ -38,7 +38,7 @@ docker-compose up
 ![image](https://github.com/as6325400/ccuRobClass/assets/105158172/c4707c35-8cfd-453f-91f1-57f82c6457ca)
 
 
-點選 F12 打開開法者模式，並選取網路
+點選 F12 打開開發者模式，並選取網路
 ![image](https://github.com/as6325400/ccuRobClass/assets/105158172/cf25d10c-3705-48cf-b05d-b590d303e209)
 
 
