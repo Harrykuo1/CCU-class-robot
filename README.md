@@ -5,7 +5,8 @@
 pip install -r requirements.txt
 ```
 2. Install pytesseract and pytesseract-eng language pack on your computer
-3. Copy a copy of env_example.py to env.py
+3. Copy the ccu traindata into the tessdata of the entrance tesseract-ocr
+4. Copy a copy of env_example.py to env.py
 ```
 cp env_example.py env.py
 ```
