@@ -118,3 +118,9 @@ CLASS_LIST = [
 ]
 ```
 建立完成 !
+
+2. 把帳密填寫進 env.py 裡面
+3. Run the bot
+```
+docker-compose up
+```
