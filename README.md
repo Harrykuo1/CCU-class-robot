@@ -5,11 +5,12 @@
 pip install -r requirements.txt
 ```
 2. Install pytesseract and pytesseract-eng language pack on your computer
-3. Copy a copy of env_example.py to env.py
+3. Copy the ccu traindata into the tessdata of the entrance tesseract-ocr
+4. Copy a copy of env_example.py to env.py
 ```
 cp env_example.py env.py
 ```
-4. Enter your account password and the course you want to choose in env.py
+4. Enter your account password and the course you want to choose in env.py(修改教學可參考後面"設置想搶的課程")
 5. Run the bot
 ```python
 python main.py
@@ -19,7 +20,15 @@ python main.py
 ```
 cp env_example.py env.py
 ```
-
+2. Enter your account password and the course you want to choose in env.py(修改教學可參考後面"設置想搶的課程")
+3. Build docker image
+```
+docker-compose build --no-cache
+```
+4. Run the bot
+```
+docker-compose up
+```
 ## 設置想搶的課程
 
 ### 設置想搶的課
@@ -30,7 +39,7 @@ cp env_example.py env.py
 ![image](https://github.com/as6325400/ccuRobClass/assets/105158172/c4707c35-8cfd-453f-91f1-57f82c6457ca)
 
 
-點選 F12 打開開法者模式，並選取網路
+點選 F12 打開開發者模式，並選取網路
 ![image](https://github.com/as6325400/ccuRobClass/assets/105158172/cf25d10c-3705-48cf-b05d-b590d303e209)
 
 
