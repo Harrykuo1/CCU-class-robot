@@ -4,3 +4,5 @@ services:
   bot:
     build: .
     container_name: bot
+    volumes: 
+      - .:/myapp
