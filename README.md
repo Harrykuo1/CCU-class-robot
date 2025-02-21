@@ -21,11 +21,7 @@ python main.py
 cp env_example.py env.py
 ```
 2. Enter your account password and the course you want to choose in env.py(修改教學可參考後面"設置想搶的課程")
-3. Build docker image
-```
-docker-compose build --no-cache
-```
-4. Run the bot
+3. Run the bot
 ```
 docker-compose up
 ```
@@ -118,9 +114,3 @@ CLASS_LIST = [
 ]
 ```
 建立完成 !
-
-2. 把帳密填寫進 env.py 裡面
-3. Run the bot
-```
-docker-compose up
-```
